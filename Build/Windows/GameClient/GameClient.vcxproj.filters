@@ -20,9 +20,13 @@
     <ClCompile Include="..\..\..\GameClient\Src\Application.cpp">
       <Filter>Src</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\GameClient\Src\PlayScene.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\GameClient\Inc\Application.h">
+    <ClInclude Include="..\..\..\GameClient\Inc\StdAfx.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\PlayScene.h">
       <Filter>Inc</Filter>
     </ClInclude>
   </ItemGroup>

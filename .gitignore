@@ -2,5 +2,7 @@
 *.opensdf
 *.suo
 
+log.txt
+
 Build/Windows/Debug
 Build/Windows/GameClient/Debug

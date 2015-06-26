@@ -11,10 +11,12 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\GameClient\Src\PlayScene.cpp" />
     <ClCompile Include="..\..\..\GameClient\Src\Application.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\GameClient\Inc\Application.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\StdAfx.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\PlayScene.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\Assets\Shaders\basic.fs" />
