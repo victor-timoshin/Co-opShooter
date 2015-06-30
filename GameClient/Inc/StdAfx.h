@@ -3,6 +3,9 @@
 
 #include "Core/Utils/LogBase.h"
 #include "Core/System/WindowBase.h"
+#include "Core/OIS/InputEventBase.h"
+#include "Core/OIS/InputBase.h"
+
 #include "Core/Math/Vertex.h"
 
 #include "Gapi/DeviceBase.h"
@@ -27,7 +30,7 @@
 #pragma comment(lib, "Core_Win32_Release")
 #endif
 
-#define WINDOW_WIDTH 800
-#define WINDOW_HEIGHT 600
+#define SCREEN_WIDTH 800
+#define SCREEN_HEIGHT 600
 
 #endif // STDAFX_H

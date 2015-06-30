@@ -16,7 +16,7 @@ public:
 
 	virtual void Resume() {}
 
-	virtual void FrameStarted(float timeStep) {}
+	virtual void FrameStarted(OIS::IInputEventBase* event, float timeStep);
 
 	virtual void FrameEnded() {}
 
@@ -26,10 +26,9 @@ public:
 
 private:
 	Scene::ISceneGraphBase* sceneGraph;
-	
-	Gapi::IShaderBase* shader;
-	Gapi::IBufferBase* vertexBuffer;
-	Gapi::IBufferBase* indexBuffer;
+	Scene::ICameraBase* camera;
+
+	Core::Math::Vector3 position;
 };
 
 #endif // PLAY_SCENE_H

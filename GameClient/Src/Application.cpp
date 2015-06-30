@@ -6,8 +6,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR cmdLine, 
 	windowDesc.proc = Core::System::ProcessEvent;
 	windowDesc.mode = Core::System::WINDOWMODE::Windowed;
 	windowDesc.title = "Demo";
-	windowDesc.clientWidth = WINDOW_WIDTH;
-	windowDesc.clientHeight = WINDOW_HEIGHT;
+	windowDesc.clientWidth = SCREEN_WIDTH;
+	windowDesc.clientHeight = SCREEN_HEIGHT;
 
 	Core::System::IWindowBase* window = 0L;
 	window = Core::System::RegisterWindow(windowDesc);
@@ -28,8 +28,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR cmdLine, 
 
 	while (window->MainLoop(false))
 	{
-		sceneManagement->FrameStarted(0.0f);
-		renderSystem->FrameDrawed();
+		sceneManagement->FrameStarted(window->GetInputDevice(), 0.0f);
+		renderSystem->FrameDrawed(sceneGraph->GetActiveCamera());
 		sceneManagement->FrameEnded();
 	}
 
