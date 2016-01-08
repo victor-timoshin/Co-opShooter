@@ -11,16 +11,81 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\GameClient\Src\PlayScene.cpp" />
+    <ClCompile Include="..\..\..\GameClient\Src\Character\Character.cpp" />
+    <ClCompile Include="..\..\..\GameClient\Src\Character\CharacterView.cpp" />
+    <ClCompile Include="..\..\..\GameClient\Src\Collision\CollisionSystem.cpp" />
+    <ClCompile Include="..\..\..\GameClient\Src\Controller\CharacterController.cpp" />
+    <ClCompile Include="..\..\..\GameClient\Src\Controller\MovementController.cpp" />
+    <ClCompile Include="..\..\..\GameClient\Src\Creature\CreatureModel.cpp" />
+    <ClCompile Include="..\..\..\GameClient\Src\Creature\Creature.cpp" />
+    <ClCompile Include="..\..\..\GameClient\Src\Data\DataObject.cpp" />
+    <ClCompile Include="..\..\..\GameClient\Src\GameObject.cpp" />
+    <ClCompile Include="..\..\..\GameClient\Src\Item\Projectile.cpp" />
+    <ClCompile Include="..\..\..\GameClient\Src\Item\Item.cpp" />
+    <ClCompile Include="..\..\..\GameClient\Src\Item\Potion.cpp" />
+    <ClCompile Include="..\..\..\GameClient\Src\Item\UsableObject.cpp" />
+    <ClCompile Include="..\..\..\GameClient\Src\Item\Weapon.cpp" />
+    <ClCompile Include="..\..\..\GameClient\Src\Player.cpp" />
+    <ClCompile Include="..\..\..\GameClient\Src\Inventory.cpp" />
+    <ClCompile Include="..\..\..\GameClient\Src\State\PlayScene.cpp" />
+    <ClCompile Include="..\..\..\GameClient\Src\GameWorld.cpp" />
+    <ClCompile Include="..\..\..\GameClient\Src\Trigger.cpp" />
+    <ClCompile Include="..\..\..\GameClient\Src\PlayerInput.cpp" />
     <ClCompile Include="..\..\..\GameClient\Src\Application.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\GameClient\Inc\Character\Character.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\Character\CharacterModel.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\Character\CharacterState.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\Character\CharacterView.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\Collision\CollisionSystem.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\Controller\CharacterController.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\Controller\MovementController.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\Controller\ControllerBase.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\Creature\CreatureModel.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\Creature\CreatureAttribute.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\Creature\CreatureClass.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\Creature\CreatureGender.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\Creature\CreatureRace.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\Creature\Creature.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\Creature\CreatureType.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\Data\DataObject.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\GameObject.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\Item\Projectile.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\Item\Item.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\Item\Potion.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\Item\UsableObject.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\Item\Weapon.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\Player.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\Inventory.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\State\PlayScene.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\GameWorld.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\Trigger.h" />
+    <ClInclude Include="..\..\..\GameClient\Inc\PlayerInput.h" />
     <ClInclude Include="..\..\..\GameClient\Inc\StdAfx.h" />
-    <ClInclude Include="..\..\..\GameClient\Inc\PlayScene.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\..\Assets\Shaders\basic_texture.fs" />
+    <None Include="..\..\..\Assets\Shaders\basic_texture.vs" />
     <None Include="..\..\..\Assets\Shaders\basic.fs" />
     <None Include="..\..\..\Assets\Shaders\basic.vs" />
+    <None Include="..\..\..\Assets\Shaders\gui_basic.fs" />
+    <None Include="..\..\..\Assets\Shaders\gui_basic.vs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\..\..\Assets\Fonts\Amble-Bold.ttf" />
+    <Font Include="..\..\..\Assets\Fonts\Amble-BoldItalic.ttf" />
+    <Font Include="..\..\..\Assets\Fonts\Amble-Italic.ttf" />
+    <Font Include="..\..\..\Assets\Fonts\Amble-Light.ttf" />
+    <Font Include="..\..\..\Assets\Fonts\Amble-LightCondensed.ttf" />
+    <Font Include="..\..\..\Assets\Fonts\Amble-LightCondensedItalic.ttf" />
+    <Font Include="..\..\..\Assets\Fonts\Amble-LightItalic.ttf" />
+    <Font Include="..\..\..\Assets\Fonts\Amble-Regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\Assets\Textures\sample.bmp" />
+    <Image Include="..\..\..\Assets\Textures\sample.png" />
+    <Image Include="..\..\..\Assets\Textures\sample.tga" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{00552956-CCAF-4A65-A39E-5ED3A6AABACF}</ProjectGuid>
@@ -63,6 +128,8 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Math_Win32_Debug.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Bonus\Documents\GitHub\SWAY-GameFramework\Libs</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

@@ -1,12 +1,10 @@
 #ifndef STDAFX_H
 #define STDAFX_H
 
-#include "Core/Utils/LogBase.h"
-#include "Core/System/WindowBase.h"
-#include "Core/OIS/InputEventBase.h"
-#include "Core/OIS/InputBase.h"
-
-#include "Core/Math/Vertex.h"
+#include "Core/Utils/LoggerBase.h"
+#include "System/WindowBase.h"
+#include "System/TimerBase.h"
+#include "OIS/InputBase.h"
 
 #include "Gapi/DeviceBase.h"
 #include "Gapi/ShaderBase.h"
@@ -17,17 +15,20 @@
 
 #include "Core/Scene/SceneStateBase.h"
 #include "Core/Scene/SceneManagementBase.h"
-#include "Core/Scene/SceneGraphBase.h"
-#include "Core/Scene/SceneNodeBase.h"
+#include "SceneGraph/SceneGraphBase.h"
+#include "SceneGraph/SceneNodeBase.h"
+
+#include "GUI/FontBase.h"
 
 #include "Platform.h"
 
 #if defined(DEBUG) || defined(_DEBUG)
+#pragma comment(lib, "System_Win32_Debug")
 #pragma comment(lib, "GapiOpenGL_Win32_Debug")
 #pragma comment(lib, "Core_Win32_Debug")
-#else
-#pragma comment(lib, "GapiOpenGL_Win32_Release")
-#pragma comment(lib, "Core_Win32_Release")
+#pragma comment(lib, "OIS_Win32_Debug")
+#pragma comment(lib, "SceneGraph_Win32_Debug")
+#pragma comment(lib, "GUI_Win32_Debug")
 #endif
 
 #define SCREEN_WIDTH 800

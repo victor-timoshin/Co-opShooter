@@ -15,19 +15,205 @@
     <Filter Include="Assets\Shaders">
       <UniqueIdentifier>{3d859ba0-1ee9-4958-96fe-65cc3062f78e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Assets\Textures">
+      <UniqueIdentifier>{3657f59f-a28c-4cd0-8d40-b35ce7dbf9a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets\Fonts">
+      <UniqueIdentifier>{c437be1d-08d7-431e-b27f-fc27f6aec7aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\Character">
+      <UniqueIdentifier>{382df5f2-e4a4-432d-9630-09e38fcfbf48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Character">
+      <UniqueIdentifier>{fc4bb7b1-3f1c-44de-b504-fefc6dcaf88a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\Data">
+      <UniqueIdentifier>{443df6b1-2136-495b-8b73-db988cbb374f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Data">
+      <UniqueIdentifier>{7c660ca7-3227-476d-8918-d4485dfda0b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Creature">
+      <UniqueIdentifier>{8f7cb09e-f20f-474c-848d-f682872c6096}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\Creature">
+      <UniqueIdentifier>{7c0a4cc1-2224-43a8-a335-5a82c44b49d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\Controller">
+      <UniqueIdentifier>{7e873c1b-150e-4240-81a6-fc594739c410}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Controller">
+      <UniqueIdentifier>{da3eaaf0-3c37-40cd-9c4b-15a61606ebc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\State">
+      <UniqueIdentifier>{6b486700-bad5-4d18-b839-f88a55ba4b71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\State">
+      <UniqueIdentifier>{555cf2a8-2ddd-433f-94ce-84b8a54dd682}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\Item">
+      <UniqueIdentifier>{9fe17865-9b3e-4fcd-b57c-6430047870c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Item">
+      <UniqueIdentifier>{1ab1c5d7-64b0-40f6-a889-703b5a8cb928}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src\Collision">
+      <UniqueIdentifier>{f7a13525-0e62-4b64-ba24-2d7beb54ec6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inc\Collision">
+      <UniqueIdentifier>{144bdd68-fba8-4307-b642-d65119857aa1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\GameClient\Src\Application.cpp">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\GameClient\Src\PlayScene.cpp">
+    <ClCompile Include="..\..\..\GameClient\Src\Trigger.cpp">
       <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameClient\Src\Character\CharacterView.cpp">
+      <Filter>Src\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameClient\Src\Data\DataObject.cpp">
+      <Filter>Src\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameClient\Src\PlayerInput.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameClient\Src\Inventory.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameClient\Src\Player.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameClient\Src\Character\Character.cpp">
+      <Filter>Src\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameClient\Src\Creature\Creature.cpp">
+      <Filter>Src\Creature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameClient\Src\State\PlayScene.cpp">
+      <Filter>Src\State</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameClient\Src\Item\Item.cpp">
+      <Filter>Src\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameClient\Src\Item\Potion.cpp">
+      <Filter>Src\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameClient\Src\Item\UsableObject.cpp">
+      <Filter>Src\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameClient\Src\GameObject.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameClient\Src\GameWorld.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameClient\Src\Controller\MovementController.cpp">
+      <Filter>Src\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameClient\Src\Item\Weapon.cpp">
+      <Filter>Src\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameClient\Src\Item\Projectile.cpp">
+      <Filter>Src\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameClient\Src\Controller\CharacterController.cpp">
+      <Filter>Src\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameClient\Src\Creature\CreatureModel.cpp">
+      <Filter>Src\Creature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\GameClient\Src\Collision\CollisionSystem.cpp">
+      <Filter>Src\Collision</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\GameClient\Inc\StdAfx.h" />
-    <ClInclude Include="..\..\..\GameClient\Inc\PlayScene.h">
+    <ClInclude Include="..\..\..\GameClient\Inc\Trigger.h">
       <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\Character\CharacterView.h">
+      <Filter>Inc\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\Data\DataObject.h">
+      <Filter>Inc\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\PlayerInput.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\Character\CharacterState.h">
+      <Filter>Inc\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\Player.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\Inventory.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\Character\Character.h">
+      <Filter>Inc\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\Creature\CreatureType.h">
+      <Filter>Inc\Creature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\Creature\Creature.h">
+      <Filter>Inc\Creature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\Creature\CreatureRace.h">
+      <Filter>Inc\Creature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\Controller\ControllerBase.h">
+      <Filter>Inc\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\State\PlayScene.h">
+      <Filter>Inc\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\Item\Item.h">
+      <Filter>Inc\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\Item\Potion.h">
+      <Filter>Inc\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\Item\UsableObject.h">
+      <Filter>Inc\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\GameObject.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\GameWorld.h">
+      <Filter>Inc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\Creature\CreatureClass.h">
+      <Filter>Inc\Creature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\Creature\CreatureAttribute.h">
+      <Filter>Inc\Creature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\Controller\MovementController.h">
+      <Filter>Inc\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\Creature\CreatureGender.h">
+      <Filter>Inc\Creature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\Item\Weapon.h">
+      <Filter>Inc\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\Item\Projectile.h">
+      <Filter>Inc\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\Controller\CharacterController.h">
+      <Filter>Inc\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\Creature\CreatureModel.h">
+      <Filter>Inc\Creature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\Collision\CollisionSystem.h">
+      <Filter>Inc\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\GameClient\Inc\Character\CharacterModel.h">
+      <Filter>Inc\Character</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -37,5 +223,54 @@
     <None Include="..\..\..\Assets\Shaders\basic.vs">
       <Filter>Assets\Shaders</Filter>
     </None>
+    <None Include="..\..\..\Assets\Shaders\gui_basic.fs">
+      <Filter>Assets\Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\gui_basic.vs">
+      <Filter>Assets\Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\basic_texture.vs">
+      <Filter>Assets\Shaders</Filter>
+    </None>
+    <None Include="..\..\..\Assets\Shaders\basic_texture.fs">
+      <Filter>Assets\Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\..\..\Assets\Fonts\Amble-Bold.ttf">
+      <Filter>Assets\Fonts</Filter>
+    </Font>
+    <Font Include="..\..\..\Assets\Fonts\Amble-BoldItalic.ttf">
+      <Filter>Assets\Fonts</Filter>
+    </Font>
+    <Font Include="..\..\..\Assets\Fonts\Amble-Italic.ttf">
+      <Filter>Assets\Fonts</Filter>
+    </Font>
+    <Font Include="..\..\..\Assets\Fonts\Amble-Light.ttf">
+      <Filter>Assets\Fonts</Filter>
+    </Font>
+    <Font Include="..\..\..\Assets\Fonts\Amble-LightCondensed.ttf">
+      <Filter>Assets\Fonts</Filter>
+    </Font>
+    <Font Include="..\..\..\Assets\Fonts\Amble-LightCondensedItalic.ttf">
+      <Filter>Assets\Fonts</Filter>
+    </Font>
+    <Font Include="..\..\..\Assets\Fonts\Amble-LightItalic.ttf">
+      <Filter>Assets\Fonts</Filter>
+    </Font>
+    <Font Include="..\..\..\Assets\Fonts\Amble-Regular.ttf">
+      <Filter>Assets\Fonts</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\Assets\Textures\sample.png">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\..\..\Assets\Textures\sample.bmp">
+      <Filter>Assets\Textures</Filter>
+    </Image>
+    <Image Include="..\..\..\Assets\Textures\sample.tga">
+      <Filter>Assets\Textures</Filter>
+    </Image>
   </ItemGroup>
 </Project>
