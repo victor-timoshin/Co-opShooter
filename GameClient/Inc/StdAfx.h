@@ -1,6 +1,7 @@
 #ifndef STDAFX_H
 #define STDAFX_H
 
+#include "Core/FrameworkBase.h"
 #include "Core/Utils/LoggerBase.h"
 #include "System/WindowBase.h"
 #include "System/TimerBase.h"

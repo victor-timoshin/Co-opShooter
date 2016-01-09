@@ -14,6 +14,8 @@ void PlayScene::Enter(Core::Render::IRenderSystemBase* renderSystem, Scene::ISce
 	_renderSystem = renderSystem;
 	_sceneGraph = sceneGraph;
 
+	renderSystem->GetMaterialManager()->Load("../../../Assets/Xml/materials.xml");
+
 	Scene::ICameraBase* camera = _sceneGraph->CreateCamera("camera");
 	camera->LookAt(Math::Vec3F(0.0f, 0.0f, 1.0f));
 	camera->Perspective(CAMERA_FOV, SCREEN_WIDTH / SCREEN_HEIGHT, CAMERA_PERSP_NEAR_CLIP, CAMERA_PERSP_FAR_CLIP);

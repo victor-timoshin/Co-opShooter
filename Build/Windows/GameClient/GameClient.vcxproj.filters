@@ -212,9 +212,6 @@
     <ClInclude Include="..\..\..\GameClient\Inc\Collision\CollisionSystem.h">
       <Filter>Inc\Collision</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\GameClient\Inc\Character\CharacterModel.h">
-      <Filter>Inc\Character</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\Assets\Shaders\basic.fs">

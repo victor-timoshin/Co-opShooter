@@ -35,7 +35,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\GameClient\Inc\Character\Character.h" />
-    <ClInclude Include="..\..\..\GameClient\Inc\Character\CharacterModel.h" />
     <ClInclude Include="..\..\..\GameClient\Inc\Character\CharacterState.h" />
     <ClInclude Include="..\..\..\GameClient\Inc\Character\CharacterView.h" />
     <ClInclude Include="..\..\..\GameClient\Inc\Collision\CollisionSystem.h" />
